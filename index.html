@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+    <title>Conversor de moedas</title>
+</head>
+
+<body>
+    <section class="container principal">
+        <h1 class="container__title">Conversor de moedas</h1>
+
+        <h2 class="container__subtitle">Descubra os valores em Real!</h2>
+
+        <div class="container__value">
+            <label for="value" class="container_box_title">Insira o valor em Real:</label>
+            <input type="number" id="value">
+                    
+                <legend class="container_coins">Para:</legend>
+                <select id="moeda" class="container_box_coins">
+                    <option>Euro</option>
+                    <option>Dolar</option>
+                    <option>Iene</option>
+                </select>
+
+                <button type="submit" onclick="Converter()">Converter</button>
+        </div>
+
+        <h3 class="container__title-sec" id="result"></h3>
+        
+        <p class="container__title-sec" id="bitcoin"></p>
+    </section>
+
+    <script src="jsConversor.js"></script>
+</body>
+
+</html>
